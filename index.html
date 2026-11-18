@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC College of Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a href="#home" class="brand">ABC College <span>of Technology</span></a>
+            <nav aria-label="Main">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#courses">Courses</a>
+                <a href="#fees">Fees</a>
+                <a href="#admission">Admission</a>
+                <a href="#contact" class="nav-cta">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="wrap hero-inner">
+                <div class="hero-text">
+                    <p class="tagline">Knowledge | Innovation | Excellence</p>
+                    <h1>Learn to build what comes next in tech.</h1>
+                    <p class="lead">
+                        ABC College of Technology offers degree programs in Computer Science,
+                        Information Technology and Management, taught by working practitioners
+                        and backed by internships and placement support.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Apply for 2026-27</a>
+                        <a href="#fees" class="btn btn-ghost">See course fees</a>
+                    </div>
+                </div>
+                <aside class="hero-card" aria-label="Request a call back">
+                    <h2>Get a call back</h2>
+                    <p>Share your number and our admission team will call you within one working day.</p>
+                    <form id="quick-form" novalidate>
+                        <label for="qphone">Mobile number</label>
+                        <input type="tel" id="qphone" inputmode="numeric" placeholder="10-digit mobile number" required>
+                        <label for="qcourse">Course</label>
+                        <select id="qcourse">
+                            <option value="">Not sure yet</option>
+                            <option>BCA</option>
+                            <option>MCA</option>
+                            <option>B.Tech Computer Science</option>
+                            <option>M.Tech Computer Science</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary">Request a call back</button>
+                    </form>
+                    <p class="card-note">Admissions 2026-27 are open. Fees from ₹45,000 per year.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="news-bar" aria-label="Latest news">
+            <div class="wrap">
+                <h2>Latest News</h2>
+                <ol>
+                    <li>Admission open for 2026-27</li>
+                    <li>Annual Technical Fest will be held in September</li>
+                    <li>Registration open for Internship Program</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="wrap two-col">
+                <div>
+                    <h2>Welcome to ABC College</h2>
+                    <p>
+                        ABC College of Technology is a leading institution providing
+                        quality education in Computer Science, Information Technology
+                        and Management.
+                    </p>
+                    <p>
+                        Our programs combine strong fundamentals with hands-on lab work,
+                        live projects and industry internships, so graduates are ready
+                        for their first job on day one.
+                    </p>
+                </div>
+                <ul class="facts">
+                    <li><strong data-count="4" data-suffix="">4</strong> degree programs</li>
+                    <li><strong data-count="40" data-suffix="+">40+</strong> expert faculty</li>
+                    <li><strong data-count="12" data-suffix="">12</strong> modern computer labs</li>
+                    <li><strong data-count="100" data-suffix="+">100+</strong> hiring partners</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section alt" id="why">
+            <div class="wrap">
+                <h2>Why students choose ABC College</h2>
+                <p class="section-intro">What you get besides the degree.</p>
+                <div class="why-grid">
+                    <div>
+                        <h3>Learn by building</h3>
+                        <p>Every semester includes a lab project, and final-year students ship a working product.</p>
+                    </div>
+                    <div>
+                        <h3>Internships built in</h3>
+                        <p>Our internship program connects you with partner companies before you graduate.</p>
+                    </div>
+                    <div>
+                        <h3>Placement support</h3>
+                        <p>Resume workshops, mock interviews and campus drives with 100+ hiring partners.</p>
+                    </div>
+                    <div>
+                        <h3>Scholarships</h3>
+                        <p>Merit scholarships cover up to 25% of tuition, and fees can be paid in installments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="courses">
+            <div class="wrap">
+                <h2>Our Courses</h2>
+                <p class="section-intro">Choose an undergraduate or postgraduate program in computer science and applications.</p>
+
+                <div class="filters" role="group" aria-label="Filter courses">
+                    <button type="button" class="chip active" data-filter="all">All courses</button>
+                    <button type="button" class="chip" data-filter="ug">Undergraduate</button>
+                    <button type="button" class="chip" data-filter="pg">Postgraduate</button>
+                </div>
+
+                <div class="course-grid">
+                    <article class="course" data-level="ug">
+                        <h3>Bachelor of Computer Applications (BCA)</h3>
+                        <dl>
+                            <dt>Duration</dt><dd>3 years (6 semesters)</dd>
+                            <dt>Eligibility</dt><dd>10+2 in any stream, minimum 50%</dd>
+                            <dt>Seats</dt><dd>120</dd>
+                        </dl>
+                        <p>Programming, databases, web development and software engineering basics.</p>
+                    </article>
+
+                    <article class="course" data-level="pg">
+                        <h3>Master of Computer Applications (MCA)</h3>
+                        <dl>
+                            <dt>Duration</dt><dd>2 years (4 semesters)</dd>
+                            <dt>Eligibility</dt><dd>BCA / B.Sc. (CS) / Bachelor's with Maths</dd>
+                            <dt>Seats</dt><dd>60</dd>
+                        </dl>
+                        <p>Advanced software development, cloud computing, data science and a final-year project.</p>
+                    </article>
+
+                    <article class="course" data-level="ug">
+                        <h3>B.Tech Computer Science</h3>
+                        <dl>
+                            <dt>Duration</dt><dd>4 years (8 semesters)</dd>
+                            <dt>Eligibility</dt><dd>10+2 with Physics, Chemistry, Maths, minimum 55%</dd>
+                            <dt>Seats</dt><dd>180</dd>
+                        </dl>
+                        <p>Core CS engineering with AI, networks, operating systems and electives in machine learning and cybersecurity.</p>
+                    </article>
+
+                    <article class="course" data-level="pg">
+                        <h3>M.Tech Computer Science</h3>
+                        <dl>
+                            <dt>Duration</dt><dd>2 years (4 semesters)</dd>
+                            <dt>Eligibility</dt><dd>B.Tech / B.E. in CS, IT or related field</dd>
+                            <dt>Seats</dt><dd>30</dd>
+                        </dl>
+                        <p>Research-led specialization with a thesis in AI, data engineering or secure systems.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alt" id="fees">
+            <div class="wrap">
+                <h2>Fee Structure</h2>
+                <p class="section-intro">Fees for the 2026-27 session, in Indian Rupees (₹). Please confirm final amounts with the admission office.</p>
+
+                <div class="table-scroll">
+                    <table>
+                        <caption class="sr-only">Course fee structure</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Course</th>
+                                <th scope="col">Duration</th>
+                                <th scope="col">Tuition / year</th>
+                                <th scope="col">Exam &amp; lab / year</th>
+                                <th scope="col">Total / year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">BCA</th>
+                                <td>3 years</td>
+                                <td>₹40,000</td>
+                                <td>₹5,000</td>
+                                <td><strong>₹45,000</strong></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">MCA</th>
+                                <td>2 years</td>
+                                <td>₹55,000</td>
+                                <td>₹5,000</td>
+                                <td><strong>₹60,000</strong></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">B.Tech Computer Science</th>
+                                <td>4 years</td>
+                                <td>₹78,000</td>
+                                <td>₹7,000</td>
+                                <td><strong>₹85,000</strong></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">M.Tech Computer Science</th>
+                                <td>2 years</td>
+                                <td>₹64,000</td>
+                                <td>₹6,000</td>
+                                <td><strong>₹70,000</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="fee-notes">
+                    <div>
+                        <h3>One-time charges</h3>
+                        <ul>
+                            <li>Registration fee: ₹1,000</li>
+                            <li>Admission fee: ₹5,000</li>
+                            <li>Refundable security deposit: ₹5,000</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Optional</h3>
+                        <ul>
+                            <li>Hostel with meals: ₹70,000 / year</li>
+                            <li>College bus: ₹12,000 / year</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Payment and scholarships</h3>
+                        <ul>
+                            <li>Pay yearly or in two installments</li>
+                            <li>Merit scholarship up to 25% of tuition</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="calc">
+                    <h3>Estimate your total cost</h3>
+                    <div class="calc-grid">
+                        <div>
+                            <label for="calc-course">Course</label>
+                            <select id="calc-course">
+                                <option value="45000|3">BCA (3 years)</option>
+                                <option value="60000|2">MCA (2 years)</option>
+                                <option value="85000|4">B.Tech Computer Science (4 years)</option>
+                                <option value="70000|2">M.Tech Computer Science (2 years)</option>
+                            </select>
+                            <label class="check"><input type="checkbox" id="calc-hostel"> Hostel with meals (₹70,000 / year)</label>
+                            <label class="check"><input type="checkbox" id="calc-bus"> College bus (₹12,000 / year)</label>
+                        </div>
+                        <div class="calc-result" aria-live="polite">
+                            <p class="calc-line">Per year <strong id="calc-year">₹0</strong></p>
+                            <p class="calc-line">Whole course <strong id="calc-total">₹0</strong></p>
+                            <p class="calc-small">Includes ₹6,000 registration and admission fee. Excludes the ₹5,000 refundable deposit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="admission">
+            <div class="wrap">
+                <h2>Admission</h2>
+                <p class="section-intro">Admission is open for 2026-27. Apply in four steps.</p>
+                <ol class="steps">
+                    <li><strong>Fill the enquiry form</strong> below with your course choice.</li>
+                    <li><strong>Submit documents:</strong> mark sheets, ID proof and photographs.</li>
+                    <li><strong>Counselling:</strong> meet our admission team and confirm your seat.</li>
+                    <li><strong>Pay the fees</strong> and receive your admission letter.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section alt" id="faq">
+            <div class="wrap faq">
+                <h2>Common questions</h2>
+                <details>
+                    <summary>When do admissions close?</summary>
+                    <p>Admissions for 2026-27 are open now. Seats are filled in order of applications, so apply early.</p>
+                </details>
+                <details>
+                    <summary>Can I pay fees in installments?</summary>
+                    <p>Yes. You can pay yearly or in two installments each year.</p>
+                </details>
+                <details>
+                    <summary>Is hostel available?</summary>
+                    <p>Yes. Hostel with meals costs ₹70,000 per year and is optional.</p>
+                </details>
+                <details>
+                    <summary>Which documents do I need?</summary>
+                    <p>Previous mark sheets, an ID proof and recent passport-size photographs.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="wrap two-col">
+                <div>
+                    <h2>Contact Us</h2>
+                    <p>Tell us which course you are interested in and our admission team will get back to you.</p>
+                    <address>
+                        ABC College of Technology<br>
+                        Jaipur, Rajasthan<br>
+                        Email: admissions@abccollege.edu<br>
+                        Phone: +91 98765 43210
+                    </address>
+                </div>
+
+                <form id="contact-form" novalidate>
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+
+                    <label for="email">Gmail / Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="yourname@gmail.com" required>
+
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric" placeholder="10-digit mobile number" required>
+
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="15" max="60" required>
+
+                    <label for="course">Course</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select a course</option>
+                        <option>BCA</option>
+                        <option>MCA</option>
+                        <option>B.Tech Computer Science</option>
+                        <option>M.Tech Computer Science</option>
+                    </select>
+
+                    <label for="message">Message (optional)</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+
+                    <p id="form-status" role="status"></p>
+                    <button type="submit" class="btn btn-primary">Send enquiry</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>© 2026 ABC College of Technology</p>
+            <p>Knowledge | Innovation | Excellence</p>
+        </div>
+    </footer>
+
+    <a href="#contact" class="sticky-cta">Apply now</a>
+
+    <button id="to-top" type="button" aria-label="Back to top">&#8593;</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
